@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Instagram Spam Detection</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+<h1>📱 Instagram Spam Detection</h1>
+
+<p class="subtitle">
+AI Powered NLP Spam Detection System
+</p>
+
+<form action="/predict" method="POST">
+<textarea name="comment" placeholder="Enter Instagram comment here..." required></textarea>
+<button type="submit">Detect Spam</button>
+</form>
+
+</div>
+
+</body>
+</html>

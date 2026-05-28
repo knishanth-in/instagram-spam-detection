@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prediction Result</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h1>🔍 Detection Result</h1>
+
+<h2>{{ result }}</h2>
+
+<div class="comment-box">
+{{ comment }}
+</div>
+
+<p>{{ description }}</p>
+
+<h3>Confidence Score: {{ probability }}%</h3>
+
+<a href="/">
+<button>Try Another Comment</button>
+</a>
+
+</div>
+
+</body>
+</html>
